@@ -30,34 +30,40 @@ h1 {
 
 /* HEADINGS & SECTIONS */
 h2 {
+  margin-top: 15px;
   margin-bottom: 15px;
+  color: black;
 }
 
-.section {
-  max-width: 900px;
-  margin: 40px auto;
-  border-radius: 8px;
-}
+
 
 /* ABOUT SECTION */
+.container-wrapper {
+  padding: 20px;
+  background-color: #867cba;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
 .about-me {
   display: flex;
-  padding: auto;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  gap: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  justify-content: space-between;
 }
 
 .about-me:hover {
   background-color: #e0e0e0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
+  border-radius: 8px;
 }
 
 .bio {
-  margin-left: 20px;
+  margin-left: 50px;
   margin-top: 100px;
-  color: #666 ;
+  margin-right: 500px;
+  color: black ;
 }
 
 .profile-img {
@@ -69,8 +75,9 @@ h2 {
 /* SKILLS SECTION */
 .skills-me {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
   color: black;
 }
 
@@ -79,12 +86,11 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   flex: 1;
-  margin: 0 10px;
   background-color: #f0f0f0;
-  margin-bottom: 20px;
   color: black;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin: 20px;
 }
 
 .lang:hover {
@@ -106,6 +112,40 @@ h2 {
   line-height: 1.5;
 }
 
+/* Responsive Skills Section */
+/* Desktop - 4 columns */
+@media (min-width: 1024px) {
+  .skills-me {
+    flex-wrap: wrap;
+  }
+  
+  .lang {
+    flex: 0 0 calc(25% - 20px);
+  }
+}
+
+/* Tablet - 2 columns */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .skills-me {
+    flex-wrap: wrap;
+  }
+  
+  .lang {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+/* Mobile - 1 column */
+@media (max-width: 639px) {
+  .skills-me {
+    flex-wrap: wrap;
+  }
+  
+  .lang {
+    flex: 0 0 100%;
+  }
+}
+
 /* Icon Colors for Skills */
 .html-icon {
   color: #E34C26;
@@ -122,10 +162,9 @@ h2 {
 /* PROJECTS SECTION */
 .projects-me {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
-  padding: 20px;
+  margin-top: 20px;
 }
 
 .project-card {
@@ -133,9 +172,8 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   flex: 1;
-  margin: 0 10px;
+  margin: 20px;
   background-color: #f0f0f0;
-  margin-bottom: 20px;
   min-width: 250px;
   color: rgb(104, 92, 92);
   transition: all 0.3s ease;
@@ -164,10 +202,8 @@ h2 {
 /*  CONTACT SECTION */
 .contact-me {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .contact-item {
@@ -290,4 +326,5 @@ footer {
   text-decoration: underline;
   color: #0052a3;
 }
- 
+
+
