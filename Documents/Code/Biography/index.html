@@ -1,106 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <header>
-      <h1>My Portfolio</h1>
-       <p>BSIT Student</p>
-    </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biography</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2d2e43;">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#" style="color: #2196F3;">
+  <img src="img/letter-n.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2 rounded">
+  Neck
+</a>
 
-    <div><h2>About Me</h2></div>
-    <section class="container-wrapper">
-      <section class="section">
-        
-          <div class="about-me">
-            <div class="bio">
-          <p>
-            I am a <strong>BSIT</strong> student who is learning web development. I am currently studying <br>
-            HTML, CSS, and JavaScript to build simple and responsive websites. I enjoy<br>
-            learning new technologies and creating projects to improve my skills. My<br>
-            goal is to become a professional web developer.
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#hero-section">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-section">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills-section">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects-section">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+ 
+<section id="hero-section" class="hero-section d-flex align-items-center border-bottom border-secondary" style="background-color: #2d2e43; min-height: 90vh; color: white;">
+ 
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 py-5">
+        <p class="mb-1 fs-5">Hello</p>
+        <h1 class="display-4 fw-bold mb-3">I’m <span style="color: #2196F3;">Neco Ubatay</span></h1>
+        <p class="lead mb-4" style="max-width: 500px; color: #cbd5e0;">
+          I am a BSIT student who is learning web development. I am currently studying HTML, CSS, and JavaScript to build simple and responsive websites.
         </p>
-        </div>
+        <a href="#about-section" class="btn btn-lg px-4 fw-bold" style="background-color: #2196F3; color: white; border-radius: 8px;">More</a>
+      </div>
 
-        <div style="border-radius: 15px;" class="profile-img"><img src="img/15a69b5f-ee0f-4749-8a7f-07baf696ec9e.jpg" alt="My picture" width="200" height="300">
-        </div>
-        </div>
-        </section>
-        </section>
-        
-        <div><h2>Skills</h2></div>
-        <section class="section">
-          
-         <div class="skills-me"> 
-        <div class="lang">
-            <i class="fab fa-html5 icon html-icon"></i> <h3>HTML</h3>
-            <p>I will learn to structure web pages,<br> create forms, and build semantic layouts.</p>
-        </div>
-        <div class="lang">
-            <i class="fab fa-css3-alt icon css-icon"></i> <h3>CSS</h3>
-            <p>I will learn to design beautiful layouts,<br> create responsive designs, and master animations and transitions.</p>
-        </div>
-        <div class="lang">
-            <i class="fab fa-js icon js-icon"></i> <h3>JavaScript</h3>
-            <p>I will learn to build interactive features,<br> handle user events, and create dynamic web applications.</p>
-        </div>
-        </div>
-        </section>
-        
-       
-        <div><h2>School Works & Practice Activities</h2></div>
-        <section id="projects" class="section"> 
-          <div class="projects-me">
-          <div class="project-card">
-            <img src="img/for.project.webp" alt="HTML Exercises">
-            <h3>HTML Exercises</h3>
-            <p class="project-description">A collection of HTML practice activities including forms, tables, and semantic elements. These exercises showcase my understanding of HTML structure, accessibility standards, and best practices in web development.</p>
-          </div>
-          <div class="project-card">
-            <img src="img/images.jpg" alt="Java Activities">
-            <h3>Java Activities</h3>
-            <p class="project-description">Practice programs and assignments in Java programming. This demonstrates my knowledge of object-oriented programming concepts, data structures, and algorithm implementation.</p>
-          </div>
-          <div class="project-card">
-            <img src="img/images.jpg" alt="Network Lab Exercises">
-            <h3>Network Lab Exercises</h3>
-            <p class="project-description">Lab work focused on networking concepts including TCP/IP protocols, network configuration, and troubleshooting. This showcases my practical understanding of networking fundamentals and hands-on problem-solving skills.</p>
-          </div>
-          </div>
-        </section>
+      <div class="col-lg-6 text-center text-lg-end">
+        <img src="img/02db6a8e-0464-4cb0-ae20-901200ce798d.jpg" alt="Neco Ubatay" class="img-fluid" style="max-height: 80vh; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+</section>
 
 
-        
-        <div><h2>Contact Information</h2></div>
-        <section id="contact" class="section">
-        <div class="contact-me">
-          <div class="contact-item">
-            <i class="fas fa-envelope icon"></i>
-            <h3>Email</h3>
-            <p><a href="mailto:nubatay@gmail.com">nubatay@gmail.com</a></p>
+<!-- About Section -->
+<section id="about-section" class="about-section d-flex align-items-center border-bottom border-secondary" style="background-color: #2d2e43; min-height: 100vh; color: white;">
+  <div class="container">
+    <div class="container px-4 text-center">
+  <div class="row gx-5">
+    <div class="col">
+      <div class="p-3 mb-4"><img src="img/for.project.webp " alt="me" class="img-fluid" style="max-height: 80vh; object-fit: contain;"></div>
+    </div>
+    <div class="col-lg-6 ps-lg-5">
+  <h2 class="fw-bold mb-3" style="color: #2196F3;">About Me</h2>
+  <p class="lead" style="color: #cbd5e0; line-height: 1.8;">
+    I’m <span class="fw-bold" style="color: white;">Neco Ubatay</span>, a 25-year-old BSIT student residing in Lower Tamugan. 
+    My journey into technology is driven by a genuine passion for <strong>solving complex problems</strong> 
+    and turning ideas into functional digital reality. 
+  </p>
+  <p style="color: #cbd5e0;">
+    Currently, I am honing my skills in HTML, CSS, and JavaScript to build responsive and user-friendly web applications. 
+    My goal is to bridge the gap between design and logic, eventually becoming a proficient developer who creates impactful solutions for the web.
+  </p>
+</div>
+  </div>
+</div>
+</section>
+
+
+<!--Skills Section-->
+<section id="skills-section" class="py-5 border-bottom border-secondary" style="background-color: #2d2e43; min-height: 100vh; color: white; display: flex; align-items: center;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" style="color: #2196F3; font-size: 2.5rem;">My Skills</h2>
+      <p class="text-white opacity-75">The technologies I am currently mastering</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4" style="background-color: #f8f9fa; border-radius: 15px;">
+          <div class="mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" style="width: 60px;">
           </div>
-         
-          <div class="contact-item">
-            <i class="fas fa-phone icon"></i>
-            <h3>Phone</h3>
-            <p>+6398159418</p>
+          <h4 class="fw-bold text-dark">HTML</h4>
+          <p class="text-muted small">I will learn to structure web pages, create forms, and build semantic layouts.</p>
+          <div class="progress mt-3" style="height: 8px; background-color: #dee2e6;">
+            <div class="progress-bar" style="width: 90%; background-color: #2196F3;"></div>
           </div>
         </div>
-        </section>
-        
+      </div>
 
-<footer>
-  <div class="footer-content">
-    <p class="footer-text"><small>&copy; 2026 All Rights Reserved. Neco Agujitas Ubatay</small></p>
-    <p class="footer-text"><small>BSIT Student | Class of 2026</small></p>
-    <p class="footer-text"><small>For more information, please visit my <a href="https://www.faceboo.com/necoagujitas.ubatay/" target="_blank"><i class="fab fa-facebook"></i></a>.</small></p>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4" style="background-color: #f8f9fa; border-radius: 15px;">
+          <div class="mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" style="width: 60px;">
+          </div>
+          <h4 class="fw-bold text-dark">CSS</h4>
+          <p class="text-muted small">I will learn to design beautiful layouts, create responsive designs, and master animations.</p>
+          <div class="progress mt-3" style="height: 8px; background-color: #dee2e6;">
+            <div class="progress-bar" style="width: 80%; background-color: #2196F3;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4" style="background-color: #f8f9fa; border-radius: 15px;">
+          <div class="mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS" style="width: 60px;">
+          </div>
+          <h4 class="fw-bold text-dark">JavaScript</h4>
+          <p class="text-muted small">I will learn to build interactive features, handle user events, and create dynamic apps.</p>
+          <div class="progress mt-3" style="height: 8px; background-color: #dee2e6;">
+            <div class="progress-bar" style="width: 65%; background-color: #2196F3;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Projects Section-->
+<section id="projects-section" class="py-5 border-bottom border-secondary" style="background-color: #2d2e43; min-height: 100vh; color: white;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" style="color: #2196F3; font-size: 2.5rem;">Projects & Achievements</h2>
+      <p class="text-white opacity-75">A showcase of my school works and practice activities.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow project-card" style="background-color: #f8f9fa; border-radius: 15px; overflow: hidden;">
+          <img src="img/altumcode-PNbDkQ2DDgM-unsplash.jpg" class="card-img-top" alt="About Me Webpage" style="height: 200px; object-fit: cover;">
+          <div class="card-body p-4 text-center">
+            <h5 class="fw-bold text-dark">About Me Webpage</h5>
+            <p class="text-muted small">A responsive personal profile built using HTML and CSS to demonstrate layout structure and design.</p>
+            <span class="badge bg-primary">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow project-card" style="background-color: #f8f9fa; border-radius: 15px; overflow: hidden;">
+          <img src="img/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="card-img-top" alt="Java Activities" style="height: 200px; object-fit: cover;">
+          <div class="card-body p-4 text-center">
+            <h5 class="fw-bold text-dark">Java Activities</h5>
+            <p class="text-muted small">Collection of various object-oriented programming exercises, focusing on logic and problem-solving.</p>
+            <span class="badge bg-danger">Java</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow project-card" style="background-color: #f8f9fa; border-radius: 15px; overflow: hidden;">
+          <img src="img/chris-ried-ieic5Tq8YMk-unsplash.jpg" class="card-img-top" alt="Network Lab" style="height: 200px; object-fit: cover;">
+          <div class="card-body p-4 text-center">
+            <h5 class="fw-bold text-dark">Network Lab Exercises</h5>
+            <p class="text-muted small">Practical labs on IP addressing, subnetting, and network configuration using Cisco Packet Tracer.</p>
+            <span class="badge bg-success">Networking</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Contact Section-->
+<section id="contact-section" class="py-5 border-bottom border-secondary" style="background-color: #2d2e43; min-height: 100vh; color: white;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" style="color: #2196F3; font-size: 2.5rem;">Get In Touch</h2>
+      <p class="text-white opacity-75">Have a question or want to collaborate? Feel free to reach out!</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <h4 class="fw-bold mb-4">Contact Information</h4>
+        
+        <div class="d-flex align-items-center mb-3">
+          <div class="rounded-circle p-3 me-3" style="background-color: rgba(33, 150, 243, 0.1); border: 1px solid #2196F3;">
+            <i class="bi bi-geo-alt-fill" style="color: #2196F3;"></i>
+          </div>
+          <div>
+            <p class="mb-0 fw-bold">Location</p>
+            <p class="text-white opacity-75 mb-0">Lower Tamugan, Davao City</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <div class="rounded-circle p-3 me-3" style="background-color: rgba(33, 150, 243, 0.1); border: 1px solid #2196F3;">
+            <i class="bi bi-book-fill" style="color: #2196F3;"></i>
+          </div>
+          <div>
+            <p class="mb-0 fw-bold">Education</p>
+            <p class="text-white opacity-75 mb-0">BSIT Student</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <div class="rounded-circle p-3 me-3" style="background-color: rgba(33, 150, 243, 0.1); border: 1px solid #2196F3;">
+            <i class="bi bi-envelope-fill" style="color: #2196F3;"></i>
+          </div>
+          <div>
+            <p class="mb-0 fw-bold">Email</p>
+            <p class="text-white opacity-75 mb-0">neco.ubatay@example.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <form class="p-4 rounded shadow-lg" style="background-color: #3d3e5a;">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label small">Name</label>
+              <input type="text" class="form-control bg-dark text-white border-0 shadow-none" placeholder="Your Name">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small">Email</label>
+              <input type="email" class="form-control bg-dark text-white border-0 shadow-none" placeholder="Your Email">
+            </div>
+            <div class="col-12">
+              <label class="form-label small">Message</label>
+              <textarea class="form-control bg-dark text-white border-0 shadow-none" rows="4" placeholder="How can I help you?"></textarea>
+            </div>
+            <div class="col-12 text-end">
+              <button type="submit" class="btn fw-bold px-5" style="background-color: #2196F3; color: white; border-radius: 8px;">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+ <footer class="py-4" style="background-color: #1a1b2e; color: white; border-top: 1px solid rgba(255,255,255,0.1);">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12">
+        <p class="mb-1">&copy; 2026 <span style="color: #2196F3;" class="fw-bold">Neco Ubatay</span>. All Rights Reserved.</p>
+        <p class="small text-white-50">BSIT Student | School Year 2025-2026</p>
+      </div>
+    </div>
+    
+    <div class="mt-3">
+      <a href="#" class="text-white-50 me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white-50 me-3"><i class="bi bi-github"></i></a>
+      <a href="#" class="text-white-50"><i class="bi bi-linkedin"></i></a>
+    </div>
   </div>
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
