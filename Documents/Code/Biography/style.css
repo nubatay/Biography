@@ -5,10 +5,7 @@ body {
 }
 
 /* Button hover effect */
-.btn-lg:hover {
-    background-color: #1a76c5 !important;
-    transition: 0.3s;
-}
+
 
 .progress-bar {
     transition: width 1.5s ease-in-out;
@@ -90,4 +87,40 @@ h2.fw-bold::after {
     border: 1px solid transparent !important;
 }
 
+.btn-custom-hover {
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
 
+.btn-custom-hover:hover {
+    transform: scale(1.1);
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: white;
+}
+
+#projects-section.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#projects-section.card:hover {
+    /* Lifts the card up by 10 pixels */
+    transform: translateY(-10px);
+    
+    /* Adds a deeper shadow to give it depth */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+    
+    /* Optional: slightly brightens the progress bar on hover */
+    filter: brightness(1.05);
+}
+
+.button-custom {
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-custom:hover {
+    transform: scale(1.1);
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: white;
+}
