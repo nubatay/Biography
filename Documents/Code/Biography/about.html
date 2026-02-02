@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <link rel="icon" type="image/png" href="img/letter-n.png">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--css-->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->     
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
-     <!--Navigation-->
-    <header>
+    
+    <!--Navigation-->
+  <header>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2e43;">
     <div class="container">
       <a class="navbar-brand fw-bold d-flex align-items-center" href="#" style="color: #2196F3;">
@@ -24,37 +28,233 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#hero-section">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-             <a class="nav-link" href="index.html">About</a>
+             <a class="nav-link" href="#about-section">About</a>
             </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills-section">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects-section">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
         </div>
     </div>
   </nav>
   </header>
-    
-    <section id="hero-section" class="hero-section d-flex align-items-center " style="background-color: white; min-height: 90vh; color: #2d2e43;">
- 
+
+
+
+<!-- About Section -->
+<section id="about-section" class="about-section d-flex align-items-center " style="background-color: white; min-height: 100vh; color: white;">
+    <div class="container ">
+      <div class="row  ">
+        <div class="col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-start">
+          <img src="img/for.project.webp " alt="me" class="img-fluid rounded-2 border border-secondary" style="max-height: 80vh;object-fit: cover;">
+        </div>
+
+        <div class="col-sm-12 col-md-8 col-lg-7 ms-2 ps-4">
+          <h2 class="fw-bold mb-3 mt-4 justify-content-center d-flex" style="color: #2196F3; ">About Me</h2>
+          <p class="lead " style="color: #2d2e43; line-height: 1.8;">
+          I’m <span class="fw-bold" style="color: #2196F3;">Neco Ubatay</span>, a 25-year-old BSIT student residing in Lower Tamugan. 
+          My journey into technology is driven by a genuine passion for <strong>solving complex problems</strong> 
+          and turning ideas into functional digital reality. 
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!--Skills Section-->
+<section id="skills-section" class="py-5 " style="background-color: white; color: #2d2e43; min-height: 100vh; display: flex; align-items: center;">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 col-md-6 col-sm-12 py-5">
-        <p class="mb-1 fs-5">Hello</p>
-        <h1 class="display-4 fw-bold mb-3">I’m <span style="color: #2196F3;">Neco Ubatay</span></h1>
-        <p class="lead mb-4" style="max-width: 500px; color: #2d2e43;">
-          IT Student | Aspiring Web Developer | Problem Solver
-        </p>
-        <a href="index.html" class="btn-custom-hover btn btn-lg px-4" style="background-color: #2196F3; color: white; border-radius: 8px;">More</a>
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" style="color: #2196F3; font-size: 2.5rem;">My Skills</h2>
+      <p>The technologies I am currently mastering</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4" style="background-color: #f8f9fa; border-radius: 15px;">
+          <div class="mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" style="width: 60px;">
+          </div>
+          <h4 class="fw-bold text-dark">HTML</h4>
+          <p class="text-muted small">I will learn to structure web pages, create forms, and build semantic layouts.</p>
+          <div class="progress mt-3" style="height: 8px; background-color: #dee2e6;">
+            <div class="progress-bar" style="width: 90%; background-color: #2196F3;"></div>
+          </div>
+        </div>
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-12 text-lg-end pe-3">
-        <img src="img/02db6a8e-0464-4cb0-ae20-901200ce798d.jpg" alt="Neco Ubatay" class="img-fluid rounded-2 border border-secondary" style="max-height: 80vh; object-fit: contain;">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4" style="background-color: #f8f9fa; border-radius: 15px;">
+          <div class="mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" style="width: 60px;">
+          </div>
+          <h4 class="fw-bold text-dark">CSS</h4>
+          <p class="text-muted small">I will learn to design beautiful layouts, create responsive designs, and master animations.</p>
+          <div class="progress mt-3" style="height: 8px; background-color: #dee2e6;">
+            <div class="progress-bar" style="width: 80%; background-color: #2196F3;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4" style="background-color: #f8f9fa; border-radius: 15px;">
+          <div class="mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS" style="width: 60px;">
+          </div>
+          <h4 class="fw-bold text-dark">JavaScript</h4>
+          <p class="text-muted small">I will learn to build interactive features, handle user events, and create dynamic apps.</p>
+          <div class="progress mt-3" style="height: 8px; background-color: #dee2e6;">
+            <div class="progress-bar" style="width: 65%; background-color: #2196F3;"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<!--Projects Section-->
+<section id="projects-section" class="py-5" style="background-color: white; min-height: 100vh; color: #2d2e43;">
+  <div class="container ">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold " style="color: #2196F3; font-size: 2.5rem;">Projects & Achievements</h2>
+      <p>A showcase of my school works and practice activities.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow project-card" style="background-color: #f8f9fa; border-radius: 15px; overflow: hidden;">
+          <img src="img/altumcode-PNbDkQ2DDgM-unsplash.jpg" class="card-img-top" alt="About Me Webpage" style="height: 200px; object-fit: cover;">
+          <div class="card-body p-4 text-center">
+            <h5 class="fw-bold text-dark">About Me Webpage</h5>
+            <p class="text-muted small">A responsive personal profile built using HTML and CSS to demonstrate layout structure and design.</p>
+            <span class="badge bg-primary">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow project-card" style="background-color: #f8f9fa; border-radius: 15px; overflow: hidden;">
+          <img src="img/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="card-img-top" alt="Java Activities" style="height: 200px; object-fit: cover;">
+          <div class="card-body p-4 text-center">
+            <h5 class="fw-bold text-dark">Java Activities</h5>
+            <p class="text-muted small">Collection of various object-oriented programming exercises, focusing on logic and problem-solving.</p>
+            <span class="badge bg-danger">Java</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow project-card" style="background-color: #f8f9fa; border-radius: 15px; overflow: hidden;">
+          <img src="img/chris-ried-ieic5Tq8YMk-unsplash.jpg" class="card-img-top" alt="Network Lab" style="height: 200px; object-fit: cover;">
+          <div class="card-body p-4 text-center">
+            <h5 class="fw-bold text-dark">Network Lab Exercises</h5>
+            <p class="text-muted small">Practical labs on IP addressing, subnetting, and network configuration using Cisco Packet <br>Tracer.</p>
+            <span class="badge bg-success">Networking</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Contact Section-->
+<section id="contact-section" class="py-5" style="background-color: white; min-height: 100vh; color: #2d2e43;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" style="color: #2196F3; font-size: 2.5rem;">Get In Touch</h2>
+      <p>Have a question or want to collaborate? Feel free to reach out!</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <h4 class="fw-bold mb-4">Contact Information</h4>
+        
+        <div class="d-flex align-items-center mb-3">
+          <div class="rounded-circle p-3 me-3" style="background-color: rgba(33, 150, 243, 0.1); border: 1px solid #2196F3;">
+            <i class="bi bi-geo-alt-fill" style="color: #2196F3;"></i>
+          </div>
+          <div>
+            <p class="mb-0 fw-bold">Location</p>
+            <p class="mb-0">Lower Tamugan, Davao City</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <div class="rounded-circle p-3 me-3" style="background-color: rgba(33, 150, 243, 0.1); border: 1px solid #2196F3;">
+            <i class="bi bi-book-fill" style="color: #2196F3;"></i>
+          </div>
+          <div>
+            <p class="mb-0 fw-bold">Education</p>
+            <p class="mb-0">BSIT Student</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <div class="rounded-circle p-3 me-3" style="background-color: rgba(33, 150, 243, 0.1); border: 1px solid #2196F3;">
+            <i class="bi bi-envelope-fill" style="color: #2196F3;"></i>
+          </div>
+          <div>
+            <p class="mb-0 fw-bold">Email</p>
+            <p class="mb-0">neco.ubatay@example.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <form class="p-4 rounded shadow-lg" style="background-color: #3d3e5a;">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label small text-white opacity-70">Name</label>
+              <input type="text" class="form-control bg-dark text-white border-0 shadow-none" placeholder="Your Name">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-white opacity-75">Email</label>
+              <input type="email" class="form-control bg-dark text-white border-0 shadow-none" placeholder="Your Email">
+            </div>
+            <div class="col-12">
+              <label class="form-label small text-white opacity-75">Message</label>
+              <textarea class="form-control bg-dark text-white border-0 shadow-none" rows="4" placeholder="How can I help you?"></textarea>
+            </div>
+            <div class="col-12 text-end">
+              <button type="submit" class="button-custom btn fw-bold px-5" style="background-color: #2196F3; color: white; border-radius: 8px;">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+ <footer class="py-4" style="background-color: #1a1b2e; color: white; border-top: 1px solid rgba(255,255,255,0.1);">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12">
+        <p class="mb-1">&copy; 2026 <span style="color: #2196F3;" class="fw-bold">Neco Ubatay</span>. All Rights Reserved.</p>
+        <p class="small text-white-50">BSIT Student | School Year 2025-2026</p>
+      </div>
+    </div>
+    
+    <div class="mt-3">
+      <a href="https://www.facebook.com/necoagujitas.ubatay/" class="text-white-50 me-3"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com/nubatay/Biography" class="text-white-50 me-3"><i class="bi bi-github"></i></a>
+      <a href="#" class="text-white-50"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
